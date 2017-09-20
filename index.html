@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<audio id="madAudio">
+		<source src="media/mad_scientist_laugh.webm" type="video/webm">
+		<source src="media/mad_scientist_laugh.mp4" type="video/mp4">
+		I'm sorry; your browser doesn't support HTML5 video in WebM with
+		VP8/VP9 or MP4 with H.264.
+	</audio>
+
+	<script>
+		var toggledOn = false
+		var madAudio = document.getElementById("madAudio");
+
+		function toggle() {
+	    if (toggledOn) {
+				madAudio.pause();
+			} else {
+				madAudio.play();
+			}
+			toggledOn = !toggledOn;
+		}
+	</script>
+
+	<div class="flexcontainer">
+		<div class="circle" onclick="toggle()" class="flexcontainer">
+			Mad Scientist!
+		</div>
+	</div>
+
+</body>
+</html>

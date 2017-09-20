@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+	background: #282828;
+  min-height: 100%;
+  margin: 0;
+	color: #282828;
+	text-transform: uppercase;
+	font-size:x-large;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	background: #ffcc66;
+
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.flexcontainer {
+	min-height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+	-webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
